@@ -51,4 +51,4 @@ I built a two-part system that connects an ESP32 hardware simulation in **Wokwi*
 ---
 
 © 2026 **M Sai Varshini**. All rights reserved.  
-Built for the **NxtWave IdeaForge Online Hackathon**.
+Built for the **NxtWave IdeaForge Hackathon**.
