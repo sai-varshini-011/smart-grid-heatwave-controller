@@ -24,11 +24,31 @@ I built a two-part system that connects an ESP32 hardware simulation in **Wokwi*
 | **ESP32** | Main microcontroller | Checks sensors every 2 seconds |
 | **DHT22 Sensor** | Reads temperature | Triggers cooling fan at **35°C or above** |
 | **Potentiometer** | Simulates water tank level (0–100%) | Triggers water alert at **40% or below** |
-| **Red LED** | Cooling Fan indicator | Turns **ON** when Temp ≥ 35°C |
-| **Blue LED** | Water Shortage alert | Turns **ON** when Water ≤ 40% |
+| **🔴 Red LED** | Cooling Fan indicator | Turns **ON** when Temp ≥ 35°C |
+| **🔵 Blue LED** | Water Shortage alert | Turns **ON** when Water ≤ 40% |
 
 ---
 
 ## Files in this Repo
 * `wokwi_esp32_controller.ino` — ESP32 code for Wokwi to read the sensors, control the LEDs, and print status reports.
-* `ai_control_center.py` — Python code (run in Google Colab) that uses
+* `ai_control_center.py` — Python code (run in Google Colab) that uses the Gemini API to analyze reports and generate alerts.
+* `incident_log.txt` — Sample saved reports from the system for audit records.
+
+---
+
+## Tech Stack
+* **IoT Simulation:** Wokwi (ESP32, DHT22, Potentiometer, LEDs, Arduino C++)
+* **AI Control Center:** Python, Google Colab, Google Gemini API
+
+---
+
+## How to Run It
+1. Open `wokwi_esp32_controller.ino` in Wokwi with an ESP32, DHT22 sensor, potentiometer, and two LEDs, then click **Play**.
+2. Open the Python code in Google Colab, add your `GEMINI_API_KEY` in the **Secrets** tab on the left, and run it.
+3. Copy any status report from the Wokwi Serial Monitor and paste it into the Colab prompt to get the full control room report.
+4. Type `exit` when you want to stop. All generated reports are saved in `incident_log.txt`.
+
+---
+
+© 2026 **M Sai Varshini**. All rights reserved.  
+Built for the **NxtWave IdeaForge Online Hackathon**.
