@@ -1,1 +1,34 @@
-# smart-grid-heatwave-controller
+# Smart Grid Heatwave Controller (IoT + AI)
+
+**NxtWave IdeaForge Hackathon** | Built by **M Sai Varshini**
+
+---
+
+## The Problem
+During peak summers in India, extreme heatwaves and water shortages hit at the same time and put a lot of pressure on city power and water systems. Power substations and electrical grids start overheating once temperatures cross 35°C, which can damage equipment or cause sudden power cuts. At the same time, water tank levels drop fast and often go unnoticed until they are almost empty. Most of this is still checked manually, so control room staff react late, people don't get alerts on time, and there is no automatic record of past emergencies.
+
+---
+
+## What I Built
+I built a two-part system that connects an ESP32 hardware simulation in **Wokwi** with a **Gemini AI** control center in **Google Colab**:
+
+1. **Hardware Simulation (Wokwi):** Monitors temperature and water tank levels every 2 seconds, triggers local LED alerts automatically, and prints a live status report in the Serial Monitor.
+2. **AI Control Center (Google Colab + Gemini):** Status reports from Wokwi are copied and pasted into Colab. Gemini checks the readings, marks the situation as **Safe**, **Warning**, or **Critical** with the current IST time, gives 3 clear steps for the control room operator, writes a short citizen alert, and saves every report into `incident_log.txt`.
+
+---
+
+## Hardware & Alert Logic
+
+| Component | What it does | Trigger |
+| :--- | :--- | :--- |
+| **ESP32** | Main microcontroller | Checks sensors every 2 seconds |
+| **DHT22 Sensor** | Reads temperature | Triggers cooling fan at **35°C or above** |
+| **Potentiometer** | Simulates water tank level (0–100%) | Triggers water alert at **40% or below** |
+| **Red LED** | Cooling Fan indicator | Turns **ON** when Temp ≥ 35°C |
+| **Blue LED** | Water Shortage alert | Turns **ON** when Water ≤ 40% |
+
+---
+
+## Files in this Repo
+* `wokwi_esp32_controller.ino` — ESP32 code for Wokwi to read the sensors, control the LEDs, and print status reports.
+* `ai_control_center.py` — Python code (run in Google Colab) that uses
