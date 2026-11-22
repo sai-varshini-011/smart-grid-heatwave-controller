@@ -1,0 +1,69 @@
+========================================
+   SMART GRID CONTROL ROOM REPORT
+========================================
+DATE & TIME    : 22-Nov-2026 09:42:52 PM IST
+ALERT LEVEL    : 🟢 SAFE
+EMERGENCY TYPE : None
+
+--- 1. SENSOR STATUS ---
+- Temperature : 19.40 °C - Safe (Well below the 35°C limit)
+- Water Tank  : 59% - Safe (Above the required 40% level)
+- Cooling Fan : OFF (Should stay OFF as temperature is normal)
+
+--- 2. SITUATION SUMMARY ---
+The current temperature is 19.40 °C, which is cool and normal, so there is no extra pressure on the electricity grid. The main water tank is at 59% capacity, which is sufficient to meet regular city water needs. All systems are functioning smoothly with no issues reported.
+
+--- 3. OPERATOR ACTIONS ---
+1. Power/Equipment Action: Keep the cooling fan switched OFF and monitor the panel to ensure stable operations.
+2. Water Supply Action: Maintain regular water supply distribution across city zones as tank levels are adequate.
+3. Safety/Check Action: Conduct standard routine checks on all smart sensors to ensure they are reading accurately.
+
+--- 4. CITIZEN ALERT ---
+"Dear citizens, city power supply and water levels are completely normal. Please continue to use electricity and water responsibly."
+
+========================================
+   SMART GRID CONTROL ROOM REPORT
+========================================
+DATE & TIME    : 22-Nov-2026 09:43:28 PM IST
+ALERT LEVEL    : 🔴 CRITICAL
+EMERGENCY TYPE : Heat Emergency
+
+--- 1. SENSOR STATUS ---
+- Temperature : 44.00 °C (Critical - Heatwave Danger)
+- Water Tank  : 59% (Safe)
+- Cooling Fan : ON (Must stay ON to protect grid equipment from overheating)
+
+--- 2. SITUATION SUMMARY ---
+The city is experiencing extreme heat conditions with the temperature reaching a dangerous 44.00 °C, putting heavy stress on the power grid equipment. The water tank level is currently safe at 59%, so there is no immediate water shortage. However, quick action is required to manage the high electricity load and keep grid systems cool.
+
+--- 3. OPERATOR ACTIONS ---
+1. Ensure all transformer cooling fans and auxiliary cooling systems stay running to prevent equipment damage.
+2. Keep a close watch on water pump power lines so water distribution remains smooth and uninterrupted.
+3. Dispatch an on-duty field technician team to check grid substations for any signs of heat damage or overloading.
+
+--- 4. CITIZEN ALERT ---
+"Dear residents, extreme heatwave conditions (44°C) recorded today. Please stay indoors during peak heat, stay hydrated, and use electricity wisely to avoid power load issues."
+
+========================================
+   SMART GRID CONTROL ROOM REPORT
+========================================
+DATE & TIME    : 22-Nov-2026 09:43:56 PM IST
+ALERT LEVEL    : 🔴 CRITICAL
+EMERGENCY TYPE : Both Heat & Water Emergency
+
+--- 1. SENSOR STATUS ---
+- Temperature : 44.00 °C (Critical - Heatwave Danger)
+- Water Tank  : 17% (Critical - Severe Shortage)
+- Cooling Fan : ON (Must stay ON to prevent control equipment from burning)
+
+--- 2. SITUATION SUMMARY ---
+The city is facing extreme heatwave conditions with temperature reaching 44.00 °C, putting heavy pressure on the electrical power grid. At the same time, the main water tank has dropped to a dangerous 17%, causing a severe water shortage. Immediate emergency steps are needed to protect power equipment and supply emergency water.
+
+--- 3. OPERATOR ACTIONS ---
+1. Keep the main cooling fan running continuously and turn on extra backup fans to protect grid machinery from overheating.
+2. Order immediate water refilling for the main tank and send water tankers to critical city areas right away.
+3. Send emergency field technicians to check power transformers and monitor pipe leakages across the sector.
+
+--- 4. CITIZEN ALERT ---
+"Dear residents, due to high heat and severe water shortage, please use electricity and water carefully today. Kindly stay indoors and stay hydrated."
+
