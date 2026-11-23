@@ -84,7 +84,7 @@ You can test the pre-wired simulation directly here: **[Launch Live Wokwi Simula
 
 ## 🏙️ Real-World Applications
 
-Extreme summer heatwaves don't just strain big power plants—they knock out local infrastructure first. This system is built to catch those failures early:
+Extreme summer heatwaves don't just strain big power plants, they knock out local infrastructure first. This system is built to catch those failures early:
 
 * **Apartments & Gated Communities:** Watches over building transformers and overhead water tanks, alerting maintenance teams and residents before power trips or water runs dry.
 * **Colleges & Office Campuses:** Automates monitoring for utility rooms and backup generators, cutting out the need for constant manual checks.
