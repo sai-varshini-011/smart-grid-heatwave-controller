@@ -42,7 +42,7 @@ I built a two-part system that connects an ESP32 hardware simulation in **Wokwi*
 
 ---
 
-## 🔌 Hardware Pin Connections (ESP32)
+## Hardware Pin Connections (ESP32)
 You can test the pre-wired simulation directly here: **[Launch Live Wokwi Simulation](https://wokwi.com/projects/480749792600160257)**
 
 | Component | ESP32 Pin | Purpose |
@@ -62,10 +62,10 @@ You can test the pre-wired simulation directly here: **[Launch Live Wokwi Simula
 
 ---
 
-## 📸 System Previews
+## System Previews
 
 ### Wokwi ESP32 Simulation
-<img width="1874" height="1502" alt="image" src="https://github.com/user-attachments/assets/d8199a32-46cc-4ff3-a7c4-16bffcb05a4d" />
+<img width="2940" height="1596" alt="image" src="https://github.com/user-attachments/assets/98f908d1-28f2-4a07-8c74-be454a80519e" />
 
 
 
