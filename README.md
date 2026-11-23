@@ -82,7 +82,7 @@ You can test the pre-wired simulation directly here: **[Launch Live Wokwi Simula
 
 ---
 
-## Real-World Applications
+## 🏙️ Real-World Applications
 
 Extreme summer heatwaves don't just strain big power plants—they knock out local infrastructure first. This system is built to catch those failures early:
 
