@@ -30,15 +30,27 @@ I built a two-part system that connects an ESP32 hardware simulation in **Wokwi*
 ---
 
 ## Files in this Repo
-* `wokwi_esp32_controller.ino` — ESP32 code for Wokwi to read the sensors, control the LEDs, and print status reports.
-* `ai_control_center.py` — Python code (run in Google Colab) that uses the Gemini API to analyze reports and generate alerts.
-* `incident_log.txt` — Sample saved reports from the system for audit records.
+- `wokwi_esp32_controller.ino` — ESP32 code for Wokwi to read the sensors, control the LEDs, and print status reports.
+- `ai_control_center.py` — Python code (run in Google Colab) that uses the Gemini API to analyze reports and generate alerts.
+- `incident_log.txt` — Sample saved reports from the system for audit records.
 
 ---
 
 ## Tech Stack
-* **IoT Simulation:** Wokwi (ESP32, DHT22, Potentiometer, LEDs, Arduino C++)
-* **AI Control Center:** Python, Google Colab, Google Gemini API
+- **IoT Simulation:** Wokwi (ESP32, DHT22, Potentiometer, LEDs, Arduino C++)
+- **AI Control Center:** Python, Google Colab, Google Gemini API
+
+---
+
+## 🔌 Hardware Pin Connections (ESP32)
+You can test the pre-wired simulation directly here: **[Launch Live Wokwi Simulation](https://wokwi.com/projects/480749792600160257)**
+
+| Component | ESP32 Pin | Purpose |
+| :--- | :--- | :--- |
+| **DHT22 Sensor (SDA/Data)** | GPIO 15 | Reads live ambient temperature |
+| **Potentiometer (SIG)** | GPIO 34 | Simulates reservoir water level (0–100%) |
+| **Red LED** | GPIO 2 | Cooling fan alert (ON at ≥ 35°C) |
+| **Blue LED** | GPIO 4 | Low water alert (ON at ≤ 40%) |
 
 ---
 
@@ -47,6 +59,25 @@ I built a two-part system that connects an ESP32 hardware simulation in **Wokwi*
 2. Open the Python code in Google Colab, add your `GEMINI_API_KEY` in the **Secrets** tab on the left, and run it.
 3. Copy any status report from the Wokwi Serial Monitor and paste it into the Colab prompt to get the full control room report.
 4. Type `exit` when you want to stop. All generated reports are saved in `incident_log.txt`.
+
+---
+
+## 📸 System Previews
+
+### Wokwi ESP32 Simulation
+<img width="2940" height="1664" alt="image" src="https://github.com/user-attachments/assets/6cceff4c-c338-47b7-8a24-fb030a1a0eeb" />
+
+
+### Gemini AI Control Center Output
+<img width="2570" height="820" alt="image" src="https://github.com/user-attachments/assets/5cd2c6aa-37c2-4980-bb0d-8aa6e32e1483" />
+
+
+---
+
+## Future Scope (Phase 2)
+- **Automated Data Transfer:** Replace the manual copy-paste step by reading live sensor data directly over a **USB Serial** connection (using Python) or syncing it wirelessly through a cloud database like **Firebase**.
+- **Real Hardware Controls:** Swap the LED indicators for **relay modules** to automatically switch real substation cooling fans and water pumps on and off.
+- **Direct Citizen Alerts:** Connect an SMS or WhatsApp API so Gemini's citizen warnings are sent straight to people's phones alongside being saved in `incident_log.txt`.
 
 ---
 
