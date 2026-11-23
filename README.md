@@ -65,7 +65,7 @@ You can test the pre-wired simulation directly here: **[Launch Live Wokwi Simula
 ## System Previews
 
 ### Wokwi ESP32 Simulation
-<img width="2940" height="1596" alt="image" src="https://github.com/user-attachments/assets/98f908d1-28f2-4a07-8c74-be454a80519e" />
+<img width="2938" height="1592" alt="image" src="https://github.com/user-attachments/assets/10c7a896-bbde-47fa-b326-06a88384cdd6" />
 
 
 
