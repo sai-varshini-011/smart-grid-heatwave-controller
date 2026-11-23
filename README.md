@@ -65,7 +65,8 @@ You can test the pre-wired simulation directly here: **[Launch Live Wokwi Simula
 ## 📸 System Previews
 
 ### Wokwi ESP32 Simulation
-<img width="2940" height="1664" alt="image" src="https://github.com/user-attachments/assets/6cceff4c-c338-47b7-8a24-fb030a1a0eeb" />
+<img width="1874" height="1502" alt="image" src="https://github.com/user-attachments/assets/d8199a32-46cc-4ff3-a7c4-16bffcb05a4d" />
+
 
 
 ### Gemini AI Control Center Output
@@ -74,7 +75,7 @@ You can test the pre-wired simulation directly here: **[Launch Live Wokwi Simula
 
 ---
 
-## Future Scope (Phase 2)
+## ⚡ From Simulation to Substation
 - **Automated Data Transfer:** Replace the manual copy-paste step by reading live sensor data directly over a **USB Serial** connection (using Python) or syncing it wirelessly through a cloud database like **Firebase**.
 - **Real Hardware Controls:** Swap the LED indicators for **relay modules** to automatically switch real substation cooling fans and water pumps on and off.
 - **Direct Citizen Alerts:** Connect an SMS or WhatsApp API so Gemini's citizen warnings are sent straight to people's phones alongside being saved in `incident_log.txt`.
